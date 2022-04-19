@@ -1,0 +1,15 @@
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Code</mat-label>
+    <input matInput [(ngModel)]="code" />
+  </mat-form-field>
+  <br />
+  <mat-form-field appearance="fill">
+    <mat-label>Name</mat-label>
+    <input matInput [(ngModel)]="name" />
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button mat-dialog-close>Cancle</button>
+  <button mat-button [mat-dialog-close]="data" cdkFocusInitial>Submit</button>
+</div>

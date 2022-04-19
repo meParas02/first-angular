@@ -1,0 +1,20 @@
+<mat-form-field appearance="fill">
+  <mat-label>What's your name?</mat-label>
+  <input matInput [(ngModel)]="name" />
+</mat-form-field>
+&nbsp; <button mat-raised-button (click)="openDialog()">Go on!</button>&nbsp;
+
+<span>{{ city }} {{ pincode }}</span>
+<br />
+<span>{{ subject.code }} - {{ subject.name }}</span
+>&nbsp;
+<button mat-raised-button (click)="openDialog2()">Edit</button>
+
+<!-- <ul *ngFor="let user of users">
+  <li>Name: {{ user.name }}</li>
+  <li>Phone: {{ user.phone }}</li>
+  Social Accounts:
+  <ul *ngFor="let acc of user.socialAccounts">
+    <li>{{ acc }}</li>
+  </ul>
+</ul> -->

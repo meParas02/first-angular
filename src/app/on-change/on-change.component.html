@@ -1,0 +1,18 @@
+<input
+  type="text"
+  #box
+  placeholder="Type anything..."
+  (keyup)="onChangeData(box.value)"
+/>
+<!-- box.placeholder, box.type, box.name -->
+
+<button (click)="onClickData(box.value)" [style.margin-left]="marginLeft">
+  On Change button
+</button>
+
+<p>On change data: {{ displayVal }}</p>
+<!-- [id.orangeBorder]="addID" -->
+
+<p [class.green]="addClass">On click data: {{ displayVal2 }}</p>
+
+<!-- Before we use a module component please make sure component is import in app.module & <module>.module.ts file. -->

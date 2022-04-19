@@ -1,0 +1,13 @@
+<app-header></app-header>
+
+<app-sub-header [data]="birthday"></app-sub-header>
+
+<p>{{ status }}</p>
+
+<app-login (loginEvent)="updateLogin($event)"></app-login>
+
+<p [ngClass]="classes">binding to the classes property making this orange</p>
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>
